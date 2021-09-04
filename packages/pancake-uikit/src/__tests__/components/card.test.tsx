@@ -14,7 +14,7 @@ it("renders correctly", () => {
     <DocumentFragment>
       .c0 {
       background: #E7E3EB;
-      border-radius: 24px;
+      border-radius: 8px;
       color: #280D5F;
       overflow: hidden;
       position: relative;
@@ -26,7 +26,7 @@ it("renders correctly", () => {
       height: 100%;
       overflow: inherit;
       background: #FFFFFF;
-      border-radius: 24px;
+      border-radius: 8px;
     }
 
     .c3 {
@@ -35,7 +35,7 @@ it("renders correctly", () => {
 
     .c2 {
       background: linear-gradient(111.68deg,#F2ECF2 0%,#E8F2F6 100%);
-      border-radius: 24px 24px 0 0;
+      border-radius: 8px 24px 0 0;
       padding: 24px;
     }
 

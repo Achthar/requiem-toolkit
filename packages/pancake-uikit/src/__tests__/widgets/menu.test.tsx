@@ -147,7 +147,7 @@ it("renders correctly", () => {
       -ms-flex-align: center;
       align-items: center;
       border: 0;
-      border-radius: 16px;
+      border-radius: 8px;
       box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
       cursor: pointer;
       display: -webkit-inline-box;
@@ -207,7 +207,7 @@ it("renders correctly", () => {
       -ms-flex-align: center;
       align-items: center;
       border: 0;
-      border-radius: 16px;
+      border-radius: 8px;
       box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
       cursor: pointer;
       display: -webkit-inline-box;
@@ -264,7 +264,7 @@ it("renders correctly", () => {
       -ms-flex-align: center;
       align-items: center;
       border: 0;
-      border-radius: 16px;
+      border-radius: 8px;
       box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
       cursor: pointer;
       display: -webkit-inline-box;
@@ -627,7 +627,7 @@ it("renders correctly", () => {
     }
 
     .c19 {
-      border-radius: 16px;
+      border-radius: 8px;
       padding: 0 8px;
       border: 2px solid;
       border-color: #ED4B9E;
@@ -637,7 +637,7 @@ it("renders correctly", () => {
     }
 
     .c21 {
-      border-radius: 16px;
+      border-radius: 8px;
       padding: 0 8px;
       border: 2px solid;
       border-color: #FFB237;
@@ -647,7 +647,7 @@ it("renders correctly", () => {
     }
 
     .c24 {
-      border-radius: 16px;
+      border-radius: 8px;
       padding: 0 8px;
       border: 2px solid;
       border-color: #31D0AA;
