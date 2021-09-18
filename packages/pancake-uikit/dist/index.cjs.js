@@ -3073,7 +3073,7 @@ var Input = styled__default['default'].input(templateObject_2$b || (templateObje
     var theme = _a.theme;
     return theme.shadows.focus;
 });
-var StyledToggle = styled__default['default'].div(templateObject_3$5 || (templateObject_3$5 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 8px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 8px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
+var StyledToggle = styled__default['default'].div(templateObject_3$5 || (templateObject_3$5 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
     return theme.colors[checked ? "success" : "input"];
 }, function (_a) {
@@ -3343,7 +3343,7 @@ var baseColors = {
 };
 var additionalColors = {
     binance: "#F0B90B",
-    overlay: "#452a7a",
+    overlay: "#363636",
     gold: "#FFC700",
     silver: "#B2B2B2",
     bronze: "#E7974D",
@@ -3651,7 +3651,7 @@ var ModalBackButton = function (_a) {
     return (React__default['default'].createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
         React__default['default'].createElement(Icon$1P, { color: "primary" })));
 };
-var ModalContainer = styled__default['default'](Box)(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
+var ModalContainer = styled__default['default'](Box)(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 16px;\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 16px;\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.modal.background;
 }, function (_a) {
@@ -4647,11 +4647,11 @@ var getPreferredConfig = function (walletConfig) {
 var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b, _c = _a.displayCount, displayCount = _c === void 0 ? 3 : _c, t = _a.t;
     var _d = React.useState(false), showMore = _d[0], setShowMore = _d[1];
-    var theme = styled.useTheme();
+    // const theme = useTheme();
     var sortedConfig = getPreferredConfig(connectors);
     var displayListConfig = showMore ? sortedConfig : sortedConfig.slice(0, displayCount);
     return (React__default['default'].createElement(ModalContainer, { minWidth: "320px" },
-        React__default['default'].createElement(ModalHeader, { background: getThemeValue("colors.gradients.bubblegum")(theme) },
+        React__default['default'].createElement(ModalHeader, null,
             React__default['default'].createElement(ModalTitle, null,
                 React__default['default'].createElement(Heading, null, t("Connect Wallet"))),
             React__default['default'].createElement(ModalCloseButton, { onDismiss: onDismiss })),
@@ -4660,10 +4660,7 @@ var ConnectModal = function (_a) {
                 React__default['default'].createElement(Grid, { gridTemplateColumns: "1fr 1fr" },
                     displayListConfig.map(function (wallet) { return (React__default['default'].createElement(Box, { key: wallet.title },
                         React__default['default'].createElement(WalletCard, { walletConfig: wallet, login: login, onDismiss: onDismiss }))); }),
-                    !showMore && React__default['default'].createElement(MoreWalletCard, { t: t, onClick: function () { return setShowMore(true); } }))),
-            React__default['default'].createElement(Box, { p: "24px" },
-                React__default['default'].createElement(Text, { textAlign: "center", color: "textSubtle", as: "p", mb: "16px" }, t("Haven’t got a crypto wallet yet?")),
-                React__default['default'].createElement(Button, __assign({ as: "a", href: "https://docs.pancakeswap.finance/get-started/connection-guide", variant: "subtle", width: "100%" }, getExternalLinkProps()), t("Learn How to Connect"))))));
+                    !showMore && React__default['default'].createElement(MoreWalletCard, { t: t, onClick: function () { return setShowMore(true); } }))))));
 };
 var templateObject_1$2;
 

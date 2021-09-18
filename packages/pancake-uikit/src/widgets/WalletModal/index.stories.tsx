@@ -12,6 +12,7 @@ export const Wallet: React.FC = () => {
   const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(
     () => null,
     () => null,
+    (key: string) => key,
     "0xbdda50183d817c3289f895a4472eb475967dc980"
   );
   return (
