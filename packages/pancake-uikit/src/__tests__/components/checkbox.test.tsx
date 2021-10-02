@@ -22,7 +22,7 @@ it("renders correctly", () => {
       -webkit-transition: background-color 0.2s ease-in-out;
       transition: background-color 0.2s ease-in-out;
       border: 0;
-      border-radius: 8px;
+      border-radius: 24px;
       background-color: #eeeaf4;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
     }
