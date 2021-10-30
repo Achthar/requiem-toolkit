@@ -54,7 +54,7 @@ export const darkColors: Colors = {
   background: "#101010",
   backgroundDisabled: "#1c1c1c",
   backgroundAlt: "#1b1b1b",
-  cardBorder: "#606060",
+  cardBorder: "#000000",
   contrast: "#FFFFFF",
   dropdown: "#1E1D20",
   dropdownDeep: "##1b1b1b",
@@ -66,7 +66,7 @@ export const darkColors: Colors = {
   text: "#c7c7c7",
   textDisabled: "#454546",
   textSubtle: "#c7c7c7",
-  disabled: "#454546",
+  disabled: "#1c1c1c",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
