@@ -2326,7 +2326,7 @@ var Slider = function (_a) {
         var target = _a.target;
         onValueChanged(parseFloat(target.value));
     };
-    var progressPercentage = (value / max) * 100;
+    var progressPercentage = ((value - min) / (max - min)) * 100;
     var isMax = value === max;
     var progressWidth;
     if (progressPercentage <= 10) {

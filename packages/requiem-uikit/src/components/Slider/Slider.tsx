@@ -26,7 +26,7 @@ const Slider: React.FC<SliderProps> = ({
     onValueChanged(parseFloat(target.value));
   };
 
-  const progressPercentage = (value / max) * 100;
+  const progressPercentage = ((value - min) / (max - min)) * 100;
   const isMax = value === max;
   let progressWidth: string;
   if (progressPercentage <= 10) {
